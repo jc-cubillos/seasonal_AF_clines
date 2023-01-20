@@ -1,3 +1,14 @@
+# written by Juan Cubillos
+#
+############################################
+# This script was written and compiled from two other sources
+#used as reference for the present study:
+#Ryan Stanley & Mallory Van Wyngaarden 
+#https://github.com/rystanley/Collaborative_R_Stuff/blob/master/Mallory_HZARclines_outlier.R
+#Anja Westram -Litorina hybrid zones
+#https://github.com/AnjaWestram/Littorina_hybrid_zone_1/tree/master/cline%20analysis
+############################################
+
 Packages <- c("tidyverse", "tidyr", "ggplot2", "dplyr", "gridExtra","vcfR","poppr","hzar","reshape2","Hmisc","rlist","webshot2","gtExtras")
 lapply(Packages, library, character.only = TRUE)
 
