@@ -2,7 +2,7 @@
 #
 ############################################
 # This script was written and compiled from two other sources
-#used as reference for the present study:
+#used as a reference for multi-seed modelling of geographic clines using allele frequencies:
 #Ryan Stanley & Mallory Van Wyngaarden 
 #https://github.com/rystanley/Collaborative_R_Stuff/blob/master/Mallory_HZARclines_outlier.R
 #Anja Westram -Litorina hybrid zones
@@ -16,7 +16,7 @@ setwd("")
 #Load the csv file containing the allele frequencies per population and season. Check sample file
 AF<-read_csv(file.choose(),col_names = T) # Allele_Frequencies_top_20SNPs_All_populations.csv
 
-#Add population as a Factor, here ordered greographgically from Marine to most upstream in the Hunte
+#Add population as a Factor, here ordered geographically from Marine to most upstream in the Hunte
 AF$POP<-factor(AF$POP , levels=c("Fano","Sylt_20","Sylt_21","EMS_18","EMS_20","LG_19","VH_19","BH_18","Weser_17","Weser_20","OK_20","OK_21","HA_19","HA_20","HA_21","HA_22","HOEV","HTLS","HRM","RM","HBO","HGLA","HBW","GM_18","GM_19","HB_17","BrB","HWH","AM","FB_20", "FB_21"))
 #Add Months as a factor
 AF$MONTH<-factor(AF$MONTH, levels=c("February","May","June","July","October"))
